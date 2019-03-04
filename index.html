@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div class="container">
+        <!--Row containing instructions-->
+        <div class="row">
+            <div class="col-12 jumbotron">
+                <div class="jumbotron-fluid">
+                    <h2>Guideline</h2>
+                    <ol>
+                        <li>Each Crystal has a different numeric value</li>
+                        <li>Each time you click on a Crystal you add to your total score</li>
+                        <li>Try to match the target score and click around the different crystals to target that number. </li>
+                        <li>If you go over the target score you lose</li>
+                    </ol>
+
+                    
+                </div>
+            </div>
+        </div>
+        <!--row for target and total-->
+        <div class="row">
+            <div class="col-6" id="target">
+                Target:
+            </div>
+            <div class="col-6" id="total">
+                Total:
+            </div>
+        </div>
+        <!--row containing my crystals-->
+        <div class="row">
+            <div class="col-3 bg-danger">
+                <div class="btn btn-light btn-block" data-id=0 data-value=5>
+                    <img src="assets/images/Red_Diamond_Transparent_Clip_Art_Image.png">
+                </div>
+            </div>
+            <div class="col-3 bg-primary">
+                <div class="btn btn-light btn-block" data-id=1 data-value=5>
+                    <img src="assets/images/fancy-deep-blue-diamond.jpg">
+                </div>
+            </div>
+            <div class="col-3 bg-success">
+                <div class="btn btn-light btn-block" data-id=2 data-value=5>
+                    <img src="assets/images/EM107-PR-£800-1.89ct-emerald-9.4-x-7.0-x-4.5mm-1-200x200.jpg">
+                </div>
+            </div>
+            <div class="col-3 bg-warning">
+                <div class="btn btn-light btn-block" data-id=3 data-value=5>
+                    <img src="assets/images/51sFyqMfL8L._AC_UL200_SR200,200_.jpg">
+                </div>
+            </div>
+        </div>
+        <!--row for the wins and losses-->
+        <div class="row">
+            <div class="col-6" id="wins">
+                Wins:
+            </div>
+            <div class="col-6" id="losses">
+                Losses:
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery target ids given to the target, total, color boxes, wins, and losses with an attribute of data - id (e.g.
+    assigning red 1, blue 2, green 3, and yellow 4). The attribute has to be called data. -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
